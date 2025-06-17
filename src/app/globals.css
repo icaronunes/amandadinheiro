@@ -78,7 +78,7 @@ body {
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 44 90% 55%; /* Slightly desaturated yellow for dark mode */
+    --accent: 44 100% 62%; /* Slightly desaturated yellow for dark mode */
     --accent-foreground: 44 100% 15%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
