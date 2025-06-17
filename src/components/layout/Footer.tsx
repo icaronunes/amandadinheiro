@@ -1,4 +1,4 @@
-import { Feather } from 'lucide-react';
+import { DollarSign } from 'lucide-react'; // Changed Feather to DollarSign
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container py-8 text-center text-sm text-muted-foreground">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link href="/" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-            <Feather className="h-6 w-6" />
+            <DollarSign className="h-6 w-6" /> {/* Changed Feather to DollarSign */}
             <span className="font-headline text-xl font-bold">Amanda Dinheiro</span>
           </Link>
           <p>&copy; {currentYear} Amanda Dinheiro. Todos os direitos reservados.</p>
