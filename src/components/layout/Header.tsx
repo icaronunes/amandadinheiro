@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, DollarSign } from 'lucide-react'; // Changed Feather to DollarSign
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { NOMESITE } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Início' },
@@ -21,7 +22,7 @@ export default function Header() {
   const Logo = () => (
     <Link href="/" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
       <DollarSign className="h-8 w-8" /> {/* Changed Feather to DollarSign */}
-      <span className="font-headline text-2xl font-bold">Amanda Dinheiro</span>
+      <span className="font-headline text-2xl font-bold">{NOMESITE}</span>
     </Link>
   );
 

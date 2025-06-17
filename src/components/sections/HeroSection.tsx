@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import AnimatedSection from '@/components/AnimatedSection';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { NOMESITE } from '@/lib/utils';
 
 export default function HeroSection() {
   return (
@@ -14,7 +15,7 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <AnimatedSection delay="delay-100" className="space-y-6 text-center md:text-left">
             <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-primary">
-              Realize Seus Sonhos com a <span className="text-accent">Amanda Dinheiro</span>
+              Realize Seus Sonhos com a <span className="text-accent">{NOMESITE}</span>
             </h1>
             <p className="text-lg text-foreground/80">
               Soluções financeiras personalizadas para você alcançar seus objetivos. Empréstimos com as melhores taxas e consultoria especializada.

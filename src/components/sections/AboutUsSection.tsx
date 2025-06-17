@@ -2,6 +2,7 @@ import TeamMemberCard from '@/components/TeamMemberCard';
 import { getTeamMembers } from '@/lib/teamData';
 import AnimatedSection from '@/components/AnimatedSection';
 import Image from 'next/image';
+import { NOMESITE } from '@/lib/utils';
 
 export default async function AboutUsSection() {
   const members = await getTeamMembers();
@@ -11,7 +12,7 @@ export default async function AboutUsSection() {
       <div className="container">
         <AnimatedSection>
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-            Conheça a Amanda Dinheiro
+            Conheça a {NOMESITE}
           </h2>
           <p className="text-lg text-center text-foreground/80 mb-12 max-w-3xl mx-auto">
             Somos uma equipe dedicada a oferecer as melhores soluções financeiras com transparência, agilidade e foco total nas suas necessidades. Nossa missão é empoderar você a tomar decisões financeiras inteligentes e alcançar a estabilidade e prosperidade que merece.
@@ -48,11 +49,11 @@ export default async function AboutUsSection() {
 
         <AnimatedSection>
           <h3 className="font-headline text-2xl md:text-3xl font-bold text-center text-primary mb-10">
-            Nossa Equipe
+            Quem sou eu 
           </h3>
         </AnimatedSection>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {members.map((member, index) => (
+          {members.map((member, index) => ( 
             <AnimatedSection key={member.id} delay={`delay-${index * 100}`}>
               <TeamMemberCard member={member} />
             </AnimatedSection>

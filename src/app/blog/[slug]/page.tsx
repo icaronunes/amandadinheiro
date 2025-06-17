@@ -7,6 +7,7 @@ import { ptBR } from 'date-fns/locale';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
+import { NOMESITE } from '@/lib/utils';
 
 type BlogPostPageProps = {
   params: {
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     };
   }
   return {
-    title: `${post.title} - Blog Amanda Dinheiro`,
+    title: `${post.title} - Blog ${NOMESITE}`,
     description: post.excerpt || post.content.substring(0, 160),
   };
 }

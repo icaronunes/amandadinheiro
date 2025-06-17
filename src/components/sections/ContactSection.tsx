@@ -1,6 +1,6 @@
 import ContactForm from '@/components/forms/ContactForm';
 import AnimatedSection from '@/components/AnimatedSection';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MessageCircle, MapPin } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -39,12 +39,12 @@ export default function ContactSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="p-3 bg-primary/10 rounded-full text-primary">
-                <Phone className="w-6 h-6" />
+                <MessageCircle className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="font-semibold text-primary">Telefone</h4>
-                <a href="tel:+5511999998888" className="text-foreground/80 hover:text-accent">
-                  (11) 99999-8888
+                <h4 className="font-semibold text-primary">WhatApp</h4>
+                <a href="https://wa.me/+5511987886560" className="text-foreground/80 hover:text-accent">
+                  Clique aqui para iniciar uma conversa
                 </a>
               </div>
             </div>
@@ -53,11 +53,10 @@ export default function ContactSection() {
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="font-semibold text-primary">Endereço</h4>
-                <p className="text-foreground/80">
-                  Av. Principal, 123, Sala 45<br />
-                  Cidade Exemplo, Estado - CEP 01234-567
-                </p>
+                <h4 className="font-semibold text-primary">Telefone</h4>
+                <a href="tel:+5511987886560" className="text-foreground/80 hover:text-accent">
+                  (11) 98788-6560
+                </a>
               </div>
             </div>
           </AnimatedSection>

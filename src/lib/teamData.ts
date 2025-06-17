@@ -10,17 +10,17 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: '2',
-    name: 'Carlos Pereira',
-    role: 'Consultor Financeiro Sênior',
+    name: 'Faculdade',
+    role: 'Na POLI',
     imageUrl: 'https://placehold.co/300x300.png',
-    bio: 'Especialista em crédito e investimentos, Carlos auxilia nossos clientes a tomar as melhores decisões financeiras.',
+    bio: 'Formada em 2010 na turma de Engenharia de Produção da POLI, com especialização em Finanças.',
   },
   {
     id: '3',
-    name: 'Beatriz Costa',
-    role: 'Gerente de Atendimento',
+    name: 'Trabalhos Anteriores',
+    role: '10 anos de experiência',
     imageUrl: 'https://placehold.co/300x300.png',
-    bio: 'Beatriz garante que cada cliente receba um atendimento personalizado e de alta qualidade.',
+    bio: 'Trabalhei muitos anos para a Tia  Leila na Crefisa. Sai pos ela me explorava.',
   },
 ];
 

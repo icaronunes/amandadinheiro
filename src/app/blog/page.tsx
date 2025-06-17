@@ -4,10 +4,11 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { PlusCircle } from 'lucide-react';
+import { NOMESITE } from '@/lib/utils';
 
 export const metadata = {
-  title: 'Blog - Amanda Dinheiro',
-  description: 'Artigos e dicas sobre finanças, empréstimos e economia.',
+  title: `Blog - ${NOMESITE}`,
+  description: 'Empréstimos com facilidade para você concretizar seus sonhos.',
 };
 
 export default async function BlogPage() {
